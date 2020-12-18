@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="100dp"
+    android:paddingBottom="100dp"
+    android:paddingRight="50dp"
+    android:paddingLeft="50dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/block"
+        android:backgroundTint="@color/logo_color"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+        <ImageView
+            android:id = "@+id/slideImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id = "@+id/slideLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Label"
+            android:gravity="center"
+            android:fontFamily="@font/binggrae"
+            android:textSize = "35dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </FrameLayout>
+</LinearLayout>

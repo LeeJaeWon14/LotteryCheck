@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/logo_color"
+    android:gravity="left"
+    android:paddingLeft="20dp"
+    android:paddingTop="100dp"
+    android:id = "@+id/drawView">
+
+    <TextView
+        android:id = "@+id/memberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="@font/binggrae"
+        android:textColor = "@color/white"
+        android:textStyle="bold"
+        android:text="Member_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id = "@+id/logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text = "Designed by Team 나로"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/binggrae"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

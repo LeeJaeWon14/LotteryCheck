@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghkdw.lotterycheck.MainActivity"
+    android:orientation="vertical"
+    android:gravity = "center">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_weight="1">
+        <TextView
+            android:id = "@+id/myLottoRefNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor = "@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae"
+            android:textSize = "20dp"
+            android:text = "1번"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id = "@+id/drwLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity = "center"
+            android:orientation="vertical"
+            android:layout_gravity = "center"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="50dp">
+                <Button
+                    android:id = "@+id/btn2ndCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/block"
+                    android:backgroundTint="@color/logo_color"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/binggrae"
+                    android:text = "재촬영하기"
+                    android:textSize = "20dp"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id = "@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/block"
+                    android:backgroundTint="@color/logo_color"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/binggrae"
+                    android:text = "저장하기"
+                    android:textSize = "20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id = "@+id/drwNoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/binggrae"
+                    android:textSize="25dp"
+                    android:text = "DrwNo"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id = "@+id/drwDateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/binggrae"
+                    android:textSize="15dp"
+                    android:text = "Date"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/logo_color"
+                android:layout_marginBottom="50dp"/>
+            <LinearLayout
+                android:id = "@+id/afterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:orientation="vertical"
+                android:layout_gravity = "center"
+                android:layout_marginBottom="10dp" >
+                <!-- Dynamic View Area -->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/logo_color"
+                android:layout_marginTop = "50dp"
+                android:layout_marginBottom="50dp"/>
+            <LinearLayout
+                android:id = "@+id/refDrwLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:orientation="vertical"
+                android:layout_gravity = "center"
+                android:layout_marginBottom="10dp">
+                <!-- Dynamic View Area -->
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <Button
+        android:id = "@+id/btnBackAtScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/logo_color"
+        android:textStyle="bold"
+        android:fontFamily="@font/binggrae"
+        android:text = "돌아가기"
+        android:textSize = "20dp"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft = "50dp"
+    android:paddingRight = "50dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    android:gravity = "center">
+    <TextView
+        android:id = "@+id/txtDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "A"
+        android:textColor = "@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/binggrae"
+        android:layout_marginBottom="50dp"/>
+    <LinearLayout
+        android:id = "@+id/layoutTestModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id = "@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/binggrae"
+            android:textColor = "@color/black"
+            android:text = "취소"
+            android:background = "@drawable/block"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id = "@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/binggrae"
+            android:textColor = "@color/black"
+            android:text = "확인"
+            android:background = "@drawable/block"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</LinearLayout>
